@@ -1,0 +1,35 @@
+!!!
+%html
+  %head
+    %title Sthlm Skyline Parallax
+    %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}
+    %meta{content: "IE=edge", "http-equiv" => "X-UA-Compatible"}
+    %meta{charset: "utf-8"}
+    %link{href: "css/style.css", rel: "stylesheet"}
+    %link{href: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css", rel: "stylesheet"}
+  %body.sky-bg
+    .logo__layer
+      %img{src: "img/logo-white.svg"}
+      %h2
+        User Experience design &
+        %br Informationsarkitektur
+    .parallax
+      .parallax__layer.parallax__layer__0
+      .parallax__layer.parallax__layer__1
+      .parallax__layer.parallax__layer__2
+      .parallax__layer.parallax__layer__3
+      .parallax__layer.parallax__layer__4
+      .parallax__cover
+        .content__layer
+          .row
+            .col-md-4.col-md-offset-4
+              %p content goes here
+              %a{:href => "http://creativecommons.org/licenses/by-nc-nd/4.0/", :rel => "license"}
+                %img{:alt => "Creative Commons License", :src => "https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png", :style => "border-width:0"}/
+              %br/
+              %span{:href => "http://purl.org/dc/dcmitype/StillImage", :property => "dct:title", :rel => "dct:type", "xmlns:dct" => "http://purl.org/dc/terms/"} Sthlm skyline parallax
+              by
+              %a{:href => "www.uxsthlm.se", :property => "cc:attributionName", :rel => "cc:attributionURL", "xmlns:cc" => "http://creativecommons.org/ns#"} Rasmus Bergström
+              is licensed under a
+              = succeed "." do
+                %a{:href => "http://creativecommons.org/licenses/by-nc-nd/4.0/", :rel => "license"} Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License

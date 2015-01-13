@@ -1,0 +1,208 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+.sky-bg {
+  -webkit-animation: pulsate 35s linear infinite;
+  animation: pulsate 35s linear infinite;
+}
+body {
+  min-height: 100%;
+  font-family: sans-serif;
+}
+@-webkit-keyframes pulsate {
+  0% {
+    background: #d6eff4;
+  }
+  7% {
+    background: #bae4ec;
+  }
+  14% {
+    background: #9ed9e5;
+  }
+  21% {
+    background: #82cedd;
+  }
+  28% {
+    background: #65c3d6;
+  }
+  35% {
+    background: #49b8ce;
+  }
+  42% {
+    background: #34a9c0;
+  }
+  49% {
+    background: #2c90a4;
+  }
+  56% {
+    background: #34a9c0;
+  }
+  63% {
+    background: #49b8ce;
+  }
+  70% {
+    background: #65c3d6;
+  }
+  77% {
+    background: #82cedd;
+  }
+  84% {
+    background: #9ed9e5;
+  }
+  91% {
+    background: #bae4ec;
+  }
+  95% {
+    background: #aedfe9;
+  }
+  100% {
+    background: #d6eff4;
+  }
+}
+@keyframes pulsate {
+  0% {
+    background: #d6eff4;
+  }
+  7% {
+    background: #bae4ec;
+  }
+  14% {
+    background: #9ed9e5;
+  }
+  21% {
+    background: #82cedd;
+  }
+  28% {
+    background: #65c3d6;
+  }
+  35% {
+    background: #49b8ce;
+  }
+  42% {
+    background: #34a9c0;
+  }
+  49% {
+    background: #2c90a4;
+  }
+  56% {
+    background: #34a9c0;
+  }
+  63% {
+    background: #49b8ce;
+  }
+  70% {
+    background: #65c3d6;
+  }
+  77% {
+    background: #82cedd;
+  }
+  84% {
+    background: #9ed9e5;
+  }
+  91% {
+    background: #bae4ec;
+  }
+  95% {
+    background: #aedfe9;
+  }
+  100% {
+    background: #d6eff4;
+  }
+}
+.logo__layer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 10%;
+  max-width: 80%;
+  z-index: -1;
+  margin: auto;
+  text-align: center;
+}
+.logo__layer img {
+  height: 120px;
+}
+.logo__layer h2 {
+  color: white;
+}
+.parallax {
+  -webkit-perspective: 100px;
+  perspective: 100px;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.parallax__layer {
+  background-position: bottom center;
+  background-repeat: repeat-x;
+  position: absolute;
+  height: 840px;
+  width: 100%;
+}
+.parallax__layer__0 {
+  background-image: url(../img/layer-1.png);
+  background-size: 3000px 612px;
+  bottom: -100px;
+  -webkit-transform: translateZ(-150px) scale(3);
+  transform: translateZ(-150px) scale(3);
+}
+.parallax__layer__1 {
+  background-image: url(../img/layer-2.png);
+  bottom: 60px;
+  -webkit-transform: translateZ(-100px) scale(2.5);
+  transform: translateZ(-100px) scale(2.5);
+}
+.parallax__layer__2 {
+  background-image: url(../img/layer-3.png);
+  bottom: 160px;
+  -webkit-transform: translateZ(-50px) scale(2);
+  transform: translateZ(-50px) scale(2);
+}
+.parallax__layer__3 {
+  background-image: url(../img/layer-4.png);
+  bottom: 125px;
+  -webkit-transform: translateZ(-25px) scale(1.5);
+  transform: translateZ(-25px) scale(1.5);
+}
+.parallax__layer__4 {
+  background-image: url(../img/layer-5.png);
+  bottom: 0px;
+  -webkit-transform: translateZ(0px) scale(1);
+  transform: translateZ(0px) scale(1);
+}
+.parallax__cover {
+  background: #EDEDED;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 4;
+}
+.content__layer {
+  background: #EDEDED;
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 100%;
+  z-index: 5;
+  margin: auto;
+  text-align: center;
+}
+.content__layer:before,
+.content__layer:after {
+  content: ' ';
+  display: table;
+}
+.content__layer:after {
+  clear: both;
+}
